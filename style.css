@@ -17,7 +17,7 @@
     align-items: center;
 }
 .logo{
-    width: 50px;
+    width: 100px;
     cursor: pointer;
     margin: 30px 0;
 }
@@ -126,7 +126,8 @@ button:hover{
     cursor: pointer;
 }
 .contactus img{
-    height: 50px;
+    height: 130px;
+    margin-right: 40px;
     bottom: 0;
     right: 0;
     position : fixed;
@@ -202,7 +203,7 @@ button:hover{
 {
     nav ul
     {
-        width: 100%;
+        width: 170px;
         background: linear-gradient(#ff54a2, #ff575a);
         position:absolute;
         top: 75px;
@@ -244,7 +245,11 @@ button:hover{
     .intro-1 h3{
         font-size: 22px;
     }
+    .logo{
+        width: 70px;
+    }
     .contactus img{
-        bottom : 0;
+        height: 60px;
+        margin-right: 10px;
     }
 }
