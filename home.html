@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anytime Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="logo.png" class="logo">
+            <nav>
+                <ul id="itemList">
+                    <li><a href="dairyproducts.html">Dairy Products</a></li>
+                    <li><a href="groceryproducts.html">Grocery Products</a></li>
+                    <li><a href="frozenfood.html">Frozen Foods</a></li>
+                    <li><a href="nonvegfood.html">Non-Veg Foods</a></li>
+                </ul>
+            </nav>
+            <img src="menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>        
+    </div>
+    <div class="intro">
+        <div class="intro-1">
+            <h2>Welcome to <br> Anytime Online Store</h2>
+            <h3> supplies your essentials at <br> your door step <br><br>#stayhomewedeliver</h3>
+            <h4>New User</h4>
+            <button type="button">Register Now<img src="arrow.png"></button>
+        </div>
+        <div class="intro-2">
+            <img src="deliver.png" class="deliver">
+        </div>
+    </div>
+    <div class="featured-brands">
+        <h2>- Feautured Brands - </h2>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="fortune.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="amul.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="havmor.jpg" style="width:100%">
+            </div>
+    
+            <div class="mySlides fade">
+              <img src="catch.jpg" style="width:100%">
+            </div>
+    
+            <div class="mySlides fade">
+              <img src="nonveg.png" style="width:100%">
+            </div>
+    
+            <div class="mySlides fade">
+              <img src="frozenfood.jpg" style="width:100%">
+            </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+    <div class="contactus">
+        <a href="tel:8130586075"><img src="contactus.png"></a>
+    </div>
+    <div class="social-links">
+        <a href="https://www.instagram.com/jatinrathi_/?hl=en"  target = "_blank"><img src="ig.png"></a> 
+        <a href="https://www.facebook.com/" target = "_blank"><img src="fb.png"></a> 
+        <a href="https://twitter.com/home" target = "_blank"><img src="tw.png"></a>
+        <a href="mailto: theemotionstube@gmail.com" target = "_blank"><img src="emailus.png"></a>
+    </div>
+       
+    <script>
+        var menuList = document.getElementById("itemList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu()
+        {
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "130px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+
+        // BANNER SLIDER 
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+</html>
