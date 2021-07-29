@@ -4,11 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anytime Store</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><body>
+                <!-- navigation bar and logo -->
+    <div class="container">  
         <div class="navbar">
-            <img src="logo.gif" class="logo">
+            <img src="images/logo.gif" class="logo">
             <nav>
                 <ul id="itemList">
                     <li><a href="dairyproducts.html">Dairy Products</a></li>
@@ -18,49 +19,51 @@
                     <li><a href="form.html">My Account</a></li>
                 </ul>
             </nav>
-            <img src="menu.png" class="menu-icon" onclick="togglemenu()">
-        </div>        
+            <img src="images/cart.png" class="cart">
+            <img src="images/menu.png" class="menu-icon" onclick="togglemenu()"> 
+        </div>      
     </div>
+                <!-- introduction and deliever image  -->
     <div class="intro">
         <div class="intro-1">
             <h2>Welcome to <br> Anytime Online Store</h2>
             <h3> supplies your essentials at <br> your door step <br><br>#stayhomewedeliver</h3>
-            <h4>New User</h4>
-            <button type="button">Register Now<img src="arrow.png"></button>
+            <button type="button" onclick="document.location = 'groceryproducts.html'">Shop Now<img src="images/arrow.png"></button>
         </div>
         <div class="intro-2">
-            <img src="deliver.png" class="deliver">
+            <img src="images/deliver.png" class="deliver">
         </div>
     </div>
+            <!-- featured brands / banners-->
     <div class="featured-brands">
-        <h2>- Feautured Brands - </h2>
+        <h2 class="tittle">- Feautured Brands - </h2>
         <div class="slideshow-container">
 
             <div class="mySlides fade">
-              <img src="fortune.png" style="width:100%">
+              <img src="images/fortune.png" style="width:100%">
             </div>
-            
+
             <div class="mySlides fade">
-              <img src="amul.jpg" style="width:100%">
+              <img src="images/amul.jpg" style="width:100%">
             </div>
-            
+
             <div class="mySlides fade">
-              <img src="havmor.jpg" style="width:100%">
+              <img src="images/havmor.jpg" style="width:100%">
             </div>
     
             <div class="mySlides fade">
-              <img src="catch.jpg" style="width:100%">
+              <img src="images/catch.jpg" style="width:100%">
             </div>
     
             <div class="mySlides fade">
-              <img src="nonveg.png" style="width:100%">
+              <img src="images/nonveg.png" style="width:100%">
             </div>
     
             <div class="mySlides fade">
-              <img src="frozenfood.jpg" style="width:100%">
+              <img src="images/frozenfood.jpg" style="width:100%">
             </div>
             
-            </div>
+        </div>
             <br>
             
             <div style="text-align:center">
@@ -71,16 +74,137 @@
               <span class="dot"></span> 
               <span class="dot"></span> 
             </div>
+   </div>
+            <!-- featured products -->
+    <div class="featured-products">
+      <h2 class="tittle">- Featured Products -</h2>
+      <div class="row">
+        <div class="col-1">
+          <a href="dairyproducts.html"><img src="images/amulbutter.jpg"></a>
+          <h4>Amul Butter 100g</h4>
+          <p>&#8377; 46.00</p>
+        </div>
+        <div class="col-1">
+          <a href="dairyproducts.html"><img src="images/havmorchocochips.png"></a>
+          <h4>Havmor Choco Chips 200g</h4>
+          <p>&#8377; 99.00</p>
+        </div>
+        <div class="col-1">
+          <a href="frozenfood.html"><img src="images/frozendalmakhani.jpg"></a>
+          <h4>Haldirams Dal Makhani 300g</h4>
+          <p>&#8377; 110.00</p>
+        </div>
+        <div class="col-1">
+          <a href="groceryproducts.html"><img src="images/fortunechunks.jpg"></a>
+          <h4>Fortune Soya Chunks 225g</h4>
+          <p>&#8377; 49.00</p>
+        </div>
+        <div class="col-1">
+          <a href="nonvegfood.html"><img src="images/chickenkebab.jpg"></a>
+          <h4>Chicken Kebabs 500g</h4>
+          <p>&#8377; 150.00</p>
+        </div>
+        <div class="col-1">
+          <a href="groceryproducts.html"><img src="images/catchpavbhaji.jpg"></a>
+          <h4>Catch Pav Bhaji Masala 100g</h4>
+          <p>&#8377; 42.00</p>
+        </div>
+        <div class="col-1">
+          <a href="dairyproducts.html"><img src="images/bournvillecadbury.jpg"></a>
+          <h4>Cadbury Bournville 80g</h4>
+          <p>&#8377; 89.00</p>
+        </div>
+        <div class="col-1">
+          <a href="groceryproducts.html"><img src="images/haldiramnimbumasala.jpg"></a>
+          <h4>Haldirams Nimbu Masala 200g</h4>
+          <p>&#8377; 45.00</p>
+        </div>
+        <div class="col-1">
+          <a href="groceryproducts.html"><img src="images/fortunesoy5.jpg"></a>
+          <h4>Fortune Refined Oil 5ltr</h4>
+          <p>&#8377; 835</p>
+        </div>
+        <div class="col-1">
+          <a href="dairyproducts.html"><img src="images/mousse.jpg"></a>
+          <h4>Dairy Milk Silk Mousse 50g</h4>
+          <p>&#8377; 78.00</p>
+        </div>
+        <div class="col-1">
+          <a href="dairyproducts.html"><img src="images/koolstrawberry.jpg"></a>
+          <h4>Amul Kool Strawberry 200ml</h4>
+          <p>&#8377; 20.00</p>
+        </div>
+        <div class="col-1">
+          <a href="dairyproducts.html"><img src="images/milk.jpg"></a>
+          <h4>Amul Cow Milk 1ltr</h4>
+          <p>&#8377; 60.00</p>
+        </div>
+      </div>
+    </div>
+    <!-- -------------testimonial ---------------- -->
+    <div class="testimonial">
+      <div class="testimonial-container">
+        <div class="row">
+          <div class="col-1">
+            <i class="fa fa-quote-left"></i>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, voluptates repudiandae. Qui, eaque. Ut iusto quisquam voluptas nihil omnis excepturi quas sit? Nostrum, quas totam nisi, culpa deleniti veniam porro sint voluptatum ad facilis expedita?</p>
+            <div class="ratings">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>            
+            <a href="https://www.instagram.com/ramniwasmalik/" target="_blank">
+              <img src="images/RamniwasMalik.png">
+              <h3>Ramniwas Malik (Mr. World)</h3>
+            </a>
+          </div>
+          <div class="col-1">
+            <i class="fa fa-quote-left"></i>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, voluptates repudiandae. Qui, eaque. Ut iusto quisquam voluptas nihil omnis excepturi quas sit? Nostrum, quas totam nisi, culpa deleniti veniam porro sint voluptatum ad facilis expedita?</p>
+            <div class="ratings">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            </div>
+            <a href="https://www.instagram.com/riturathee/" target="_blank">
+              <img src="images/RituRathee.png">
+              <h3>Ritu Rathee (Pilot, Youtuber)</h3>
+            </a>
+          </div>
+          <div class="col-1">
+            <i class="fa fa-quote-left"></i>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, voluptates repudiandae. Qui, eaque. Ut iusto quisquam voluptas nihil omnis excepturi quas sit? Nostrum, quas totam nisi, culpa deleniti veniam porro sint voluptatum ad facilis expedita?</p>
+            <div class="ratings">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-full"></i>
+            </div>            
+            <a href="https://www.instagram.com/rubaldhankar/" target="_blank">
+              <img src="images/RubalDhankar.png">
+              <h3>Rubal Dhankar (Police, Youtuber)</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==============footer=============== -->
+    <div class="footer-col4">
+      <a href="https://www.instagram.com/jatinrathi_/?hl=en"  target = "_blank"><img src="images/ig.png"></a> 
+      <a href="https://www.facebook.com/" target = "_blank"><img src="images/fb.png"></a> 
+      <a href="https://twitter.com/home" target = "_blank"><img src="images/tw.png"></a>
+      <a href="mailto: theemotionstube@gmail.com" target = "_blank"><img src="images/emailus.png"></a>
+  </div>
+            <!-- help/support icon  -->
     <div class="contactus">
-        <a href="tel:8130586075"><img src="contactus.gif"></a>
+        <a href="tel:8130586075"><img src="images/contactus.gif"></a>
     </div>
-    <div class="social-links">
-        <a href="https://www.instagram.com/jatinrathi_/?hl=en"  target = "_blank"><img src="ig.png"></a> 
-        <a href="https://www.facebook.com/" target = "_blank"><img src="fb.png"></a> 
-        <a href="https://twitter.com/home" target = "_blank"><img src="tw.png"></a>
-        <a href="mailto: theemotionstube@gmail.com" target = "_blank"><img src="emailus.png"></a>
-    </div>
-       
     <script>
         var menuList = document.getElementById("itemList");
         menuList.style.maxHeight = "0px";
