@@ -7,8 +7,8 @@
 .container{
     width: 100%;
     min-height: 10vh;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 6%;
+    padding-right: 6%;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -25,6 +25,7 @@
     cursor: pointer;
     margin: 30px 0;
 }
+
 .menu-icon{
     width: 25px;
     cursor: pointer;
@@ -209,10 +210,38 @@ button:hover{
 }
 /* ==============footer==================== */
 
-.footer-col4
+.footer
 {
     text-align: center;
     background: #ff6062;
+}
+.footer-elements{
+    display: flex;
+}
+.footer-aboutus{
+    width: 50%;
+    padding: 30px 30px 30px 54px;
+}
+.footer-UsefulLinks{
+    padding: 30px 55px 30px 60px;
+    display: inline-block;
+}
+.footer-UsefulLinks li{
+    list-style: none;
+}
+.footer-UsefulLinks a{
+    text-decoration: none;
+    color: #000;
+}
+.footer-UsefulLinks li:hover, .footer-UsefulLinks a:hover{
+    color: #403E3E;
+    transform: translateY(-7%);
+}
+.fa-ul{
+    text-align:left;
+}
+.footer-col4{
+    padding: 30px;
 }
 .footer-col4 img{
     height: 25px;
@@ -220,7 +249,14 @@ button:hover{
     cursor: pointer;
 }
 .footer-col4 img:hover{
-    transform: translateY(-20%);
+    transform: translateY(-10%);
+}
+.footer-map{
+    padding: 20px;
+}
+.footer-copyright{
+    background-color: #ffadae;
+    font-size: 13px;
 }
 .contactus img{
     height: 130px;
@@ -233,7 +269,7 @@ button:hover{
 /* BANNER AUTOMATIC SLIDER  */
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 1100px;
     position: relative;
     margin: auto;
   }
@@ -334,7 +370,7 @@ button:hover{
         font-size: 22px;
     }
     .col-1{
-        width: 100%;
+        width: 49%;
     }
     .testimonial{
         padding: 0px;
@@ -345,6 +381,19 @@ button:hover{
     }
     .logo{
         width: 70px;
+    }
+    .footer-elements{
+        display:block;
+    }
+    .footer-aboutus{
+        width: 100%;
+        padding: 20px;
+    }
+    .footer-UsefulLinks{
+        padding: 20px;
+    }
+    .footer-col4{
+        padding: 0px;
     }
     .contactus img{
         height: 60px;

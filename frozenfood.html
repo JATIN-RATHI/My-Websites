@@ -1,9 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anytime Store</title>
+    <link rel="stylesheet" href="category.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
-<body>
-    
+                <!-- navigation bar and logo -->
+    <div class="container">  
+        <div class="navbar">
+            <img src="images/logo.gif" class="logo">
+             <!-- =====search bar======= -->
+             <div class="searchbar">
+              <table class="searchContainer">
+                  <tr>
+                      <td>
+                          <input type="text" placeholder="Search" class="search">
+                      </td>
+                      <td>
+                          <a href="#"><i class="material-icons">search</i></a>
+                      </td>
+                  </tr>
+              </table>
+          </div>
+            <nav>
+                <ul id="itemList">
+                    <li><a href="dairyproducts.html">Dairy Products</a></li>
+                    <li><a href="groceryproducts.html">Grocery Products</a></li>
+                    <li><a href="frozenfood.html">Frozen Foods</a></li>
+                    <li><a href="nonvegfood.html">Non-Veg Foods</a></li>
+                    <li><a href="form.html">My Account</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" class="cart">
+            <img src="images/menu.png" class="menu-icon" onclick="togglemenu()"> 
+        </div>      
+    </div>
+    <!-- =================all dairy products============= -->
+    <div class="featured-products">
+        <h2 class="tittle">- Featured Products -</h2>
+        <div class="row">
+          <div class="col-1">
+            <a href="dairyproducts.html"><img src="images/amulbutter.jpg"></a>
+            <h4>Amul Butter 100g</h4>
+            <p>&#8377; 46.00</p>
+          </div>
+          <div class="col-1">
+            <a href="dairyproducts.html"><img src="images/havmorchocochips.png"></a>
+            <h4>Havmor Choco Chips 200g</h4>
+            <p>&#8377; 99.00</p>
+          </div>
+          <div class="col-1">
+            <a href="frozenfood.html"><img src="images/frozendalmakhani.jpg"></a>
+            <h4>Haldirams Dal Makhani 300g</h4>
+            <p>&#8377; 110.00</p>
+          </div>
+          <div class="col-1">
+            <a href="groceryproducts.html"><img src="images/fortunechunks.jpg"></a>
+            <h4>Fortune Soya Chunks 225g</h4>
+            <p>&#8377; 49.00</p>
+          </div>
+          <div class="col-1">
+            <a href="nonvegfood.html"><img src="images/chickenkebab.jpg"></a>
+            <h4>Chicken Kebabs 500g</h4>
+            <p>&#8377; 150.00</p>
+          </div>
+          <div class="col-1">
+            <a href="groceryproducts.html"><img src="images/catchpavbhaji.jpg"></a>
+            <h4>Catch Pav Bhaji Masala 100g</h4>
+            <p>&#8377; 42.00</p>
+          </div>
+          <div class="col-1">
+            <a href="dairyproducts.html"><img src="images/bournvillecadbury.jpg"></a>
+            <h4>Cadbury Bournville 80g</h4>
+            <p>&#8377; 89.00</p>
+          </div>
+          <div class="col-1">
+            <a href="groceryproducts.html"><img src="images/haldiramnimbumasala.jpg"></a>
+            <h4>Haldirams Nimbu Masala 200g</h4>
+            <p>&#8377; 45.00</p>
+          </div>
+          <div class="col-1">
+            <a href="groceryproducts.html"><img src="images/fortunesoy5.jpg"></a>
+            <h4>Fortune Refined Oil 5ltr</h4>
+            <p>&#8377; 835</p>
+          </div>
+          <div class="col-1">
+            <a href="dairyproducts.html"><img src="images/mousse.jpg"></a>
+            <h4>Dairy Milk Silk Mousse 50g</h4>
+            <p>&#8377; 78.00</p>
+          </div>
+          <div class="col-1">
+            <a href="dairyproducts.html"><img src="images/koolstrawberry.jpg"></a>
+            <h4>Amul Kool Strawberry 200ml</h4>
+            <p>&#8377; 20.00</p>
+          </div>
+          <div class="col-1">
+            <a href="dairyproducts.html"><img src="images/milk.jpg"></a>
+            <h4>Amul Cow Milk 1ltr</h4>
+            <p>&#8377; 60.00</p>
+          </div>
+        </div>
+      </div>
+    <script>
+        var menuList = document.getElementById("itemList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu()
+        {
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "150px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
 </body>
 </html>

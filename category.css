@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 10vh;
+    padding-left: 6%;
+    padding-right: 6%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.cart{
+    width: 50px;
+}
+.searchbar {
+    /* margin: auto; */
+    position: relative;
+    width: 290px;
+    height: 34px;
+    border: 3px solid #ff6062;
+    padding: 0px 10px;
+    margin: 5px 0px 0px 30px;
+    border-radius: 50px;
+}
+.search-container{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.search{
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding: 0px 5px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: "Nunito";
+    color: #424242;
+    font-weight: 500;
+}
+.search:focus{
+    outline: none;
+}
+.material-icons{
+    color: #ff6062;
+}
+.searchbar i:hover{
+    color: #000;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+nav ul li a:hover{
+    color: rgb(233, 131, 131);
+}
+
+/* ===========DAIRY PRODUCTS============ */
+.featured-products{
+    max-width: 1180px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.tittle{
+    text-align: center;
+    margin: 40px auto 40px;
+    position: relative;
+    color: #555;
+    line-height: 60px;
+}
+.tittle::after{
+    content: '';
+    background: linear-gradient(#ff469f, #ff6062);
+    width: 130px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.col-1{
+    padding: 10px;
+    margin-bottom: 50px;
+    width: 24%;
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.col-1 img{
+    width: 100%;
+}
+.col-1 h4{
+    color: #555;
+    font-weight: normal;
+    text-align: center;
+}
+.col-1 p{
+    color: #555;
+    font-size: 14px;
+    text-align: center;
+}
+.col-1:hover{
+    transform: translateY(-10px);
+}
+/* ==================responsive============ */
+@media only screen and (max-width:768px)
+{
+    nav ul
+    {
+        width: 170px;
+        background: linear-gradient(#ff54a2, #ff575a);
+        position:absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        columns: #fff;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #itemList{
+        overflow: hidden;
+        transition: 0.7s;
+    }
+    .logo{
+        width: 70px;
+    }
+    .col-1{
+        width: 49%;
+    }
+}

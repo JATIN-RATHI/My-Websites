@@ -1,9 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anytime Store</title>
+    <link rel="stylesheet" href="category.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
-<body>
-    
+                <!-- navigation bar and logo -->
+    <div class="container">  
+        <div class="navbar">
+            <img src="images/logo.gif" class="logo">
+            <!-- =====search bar======= -->
+            <div class="searchbar">
+                <table class="searchContainer">
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Search" class="search">
+                        </td>
+                        <td>
+                            <a href="#"><i class="material-icons">search</i></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <nav>
+                <ul id="itemList">
+                    <li><a href="dairyproducts.html">Dairy Products</a></li>
+                    <li><a href="groceryproducts.html">Grocery Products</a></li>
+                    <li><a href="frozenfood.html">Frozen Foods</a></li>
+                    <li><a href="nonvegfood.html">Non-Veg Foods</a></li>
+                    <li><a href="form.html">My Account</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" class="cart">
+            <img src="images/menu.png" class="menu-icon" onclick="togglemenu()"> 
+        </div>      
+    </div>
+    <!-- =================all dairy products============= -->
+    <div class="featured-products">
+        <h2 class="tittle">- Featured Products -</h2>
+        <div class="row">
+          <div class="col-1">
+            <a href="dairyproducts.html"><img src="images/amulbutter.jpg"></a>
+            <h4>Amul Butter 100g</h4>
+            <p>&#8377; 46.00</p>
+          </div>
+          <div class="col-1">
+            <a href="dairyproducts.html"><img src="images/havmorchocochips.png"></a>
+            <h4>Havmor Choco Chips 200g</h4>
+            <p>&#8377; 99.00</p>
+          </div>
+          <div class="col-1">
+            <a href="frozenfood.html"><img src="images/amuldhi.jpg"></a>
+            <h4>Amul Masti Dahi 400g</h4>
+            <p>&#8377; 40.00</p>
+          </div>
+          <div class="col-1">
+            <a href="groceryproducts.html"><img src="images/havmorbutterscotch.jpg"></a>
+            <h4>Havmor Butter Scotch 1.2L</h4>
+            <p>&#8377; 99.00</p>
+          </div>
+          <div class="col-1">
+            <a href="nonvegfood.html"><img src="images/havmorchococake.jpg"></a>
+            <h4>Havmor Chocolate Cake 500ml</h4>
+            <p>&#8377; 250.00</p>
+          </div>
+          <div class="col-1">
+            <a href="groceryproducts.html"><img src="images/amulcremerich.jpg"></a>
+            <h4>Amul Cream Rich Ice-Cream 125ml</h4>
+            <p>&#8377; 40.00</p>
+          </div>
+          <div class="col-1">
+            <a href="dairyproducts.html"><img src="images/bournvillecadbury.jpg"></a>
+            <h4>Cadbury Bournville 80g</h4>
+            <p>&#8377; 89.00</p>
+          </div>
+          <div class="col-1">
+            <a href="groceryproducts.html"><img src="images/amulchocobrownie.jpg"></a>
+            <h4>Amul Chocolate Brownie 125ml</h4>
+            <p>&#8377; 30.00</p>
+          </div>
+          <div class="col-1">
+            <a href="groceryproducts.html"><img src="images/havmorraspberrychoco.png"></a>
+            <h4>Havmor Raspberry Choco Cake 500ml</h4>
+            <p>&#8377; 450</p>
+          </div>
+          <div class="col-1">
+            <a href="dairyproducts.html"><img src="images/mousse.jpg"></a>
+            <h4>Dairy Milk Silk Mousse 50g</h4>
+            <p>&#8377; 78.00</p>
+          </div>
+          <div class="col-1">
+            <a href="dairyproducts.html"><img src="images/koolstrawberry.jpg"></a>
+            <h4>Amul Kool Strawberry 200ml</h4>
+            <p>&#8377; 20.00</p>
+          </div>
+          <div class="col-1">
+            <a href="dairyproducts.html"><img src="images/milk.jpg"></a>
+            <h4>Amul Cow Milk 1ltr</h4>
+            <p>&#8377; 60.00</p>
+          </div>
+          <div class="col-1">
+            <a href="dairyproducts.html"><img src="images/havmorconechoco.jpg"></a>
+            <h4>Havmor Chocoate Cone 110ml</h4>
+            <p>&#8377; 50.00</p>
+          </div>
+          <div class="col-1">
+            <a href="dairyproducts.html"><img src="images/amulchocochips.png"></a>
+            <h4>Amul Choco Chips Ice-Cream 1L</h4>
+            <p>&#8377; 190.00</p>
+          </div>
+          <div class="col-1">
+            <a href="dairyproducts.html"><img src="images/5star3d.jpg"></a>
+            <h4>Cadbury 5Star 3D 42g</h4>
+            <p>&#8377; 30.00</p>
+          </div>
+          <div class="col-1">
+            <a href="dairyproducts.html"><img src="images/silk.png"></a>
+            <h4>Dairy Milk Silk Fruit N Nut 55g</h4>
+            <p>&#8377; 79.00</p>
+          </div>
+          <div class="col-1">
+            <a href="dairyproducts.html"><img src="images/amuldarkchoco.jpg"></a>
+            <h4>Amul Dark Chocolate 150g</h4>
+            <p>&#8377; 99.00</p>
+          </div>
+          <div class="col-1">
+            <a href="dairyproducts.html"><img src="images/havmorvanilla.png"></a>
+            <h4>Havmor Vanilla Brick 1.2ltr</h4>
+            <p>&#8377; 99.00</p>
+          </div>
+          <div class="col-1">
+            <a href="dairyproducts.html"><img src="images/havmorzulubar.jpg"></a>
+            <h4>Havmor Zulubar 80ml</h4>
+            <p>&#8377; 39.00</p>
+          </div>
+          <div class="col-1">
+            <a href="dairyproducts.html"><img src="images/kitkatbrownie.jpg"></a>
+            <h4>KitKat Brownie Dark Chocolate 50g</h4>
+            <p>&#8377; 55.00</p>
+          </div>
+          <div class="col-1">
+            <a href="dairyproducts.html"><img src="images/amultuttifruti.jpg"></a>
+            <h4>Amul Tutti Fruti Brick 750ml </h4>
+            <p>&#8377; 109.00</p>
+          </div>
+          <div class="col-1">
+            <a href="dairyproducts.html"><img src="images/havmorcookies.jpg"></a>
+            <h4>Havmor Cookies Cream 110ml</h4>
+            <p>&#8377; 34.00</p>
+          </div>
+          <div class="col-1">
+            <a href="dairyproducts.html"><img src="images/kitkattuffle.jpg"></a>
+            <h4>KitKat Dessert Tuffle 50g</h4>
+            <p>&#8377; 57.00</p>
+          </div>
+          <div class="col-1">
+            <a href="dairyproducts.html"><img src="images/oreo.jpg"></a>
+            <h4>Cadbury Silk Oreo 130g</h4>
+            <p>&#8377; 170.00</p>
+        </div>
+      </div>
+    </div>
+    <script>
+        var menuList = document.getElementById("itemList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu()
+        {
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "150px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
 </body>
 </html>
