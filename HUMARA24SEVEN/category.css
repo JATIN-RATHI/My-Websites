@@ -18,7 +18,7 @@
 .searchbar {
     /* margin: auto; */
     position: relative;
-    width: 290px;
+    width: 270px;
     height: 34px;
     border: 3px solid #ff6062;
     padding: 0px 10px;
@@ -165,5 +165,8 @@ nav ul li a:hover{
     }
     .col-1{
         width: 49%;
+    }
+    .searchbar{
+        width: 125px;
     }
 }

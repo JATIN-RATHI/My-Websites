@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Humara24Seven-Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- navigation bar and logo -->
+<div class="container">  
+    <div class="navbar">
+        <img src="images/logo.gif" class="logo">
+        <nav>
+            <ul id="itemList">
+                <li><a href="dairyproducts.html">Dairy Products</a></li>
+                <li><a href="groceryproducts.html">Grocery Products</a></li>
+                <li><a href="frozenfood.html">Frozen Foods</a></li>
+                <li><a href="nonvegfood.html">Non-Veg Foods</a></li>
+                <li><a href="form.html">My Account</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html" style="text-decoration:none"><img src="images/cart.png" class="cart" ><span>0</span></a>
+        <img src="images/menu.png" class="menu-icon" onclick="togglemenu()"> 
+    </div>      
+</div>
+<!-- ----------- cart container area ------------- -->
+<div class="cart-container">
+    <div class="cart-header">
+        <h5 class="product-title">PRODUCT</h5>
+        <h5 class="product-price">PRICE</h5>
+        <h5 class="product-qty">QUANTITY</h5>
+        <h5 class="product-total">TOTAL</h5>
+    </div>
+    <div class="products">
+        <img src="images/emptyCart.gif" style="margin-top: 50px;">
+        <a href="home.html" style="text-decoration: none; color: rgb(34, 146, 180);"><img src="images/shopNow.gif"  style="width: 40%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;"></a>
+    </div>
+</div>   
+  <!-- ---------- Home Button ------------ -->
+  <div class="homebtn">
+    <a href="home.html"><img src="images/homegif.gif"></a>
+</div>
+<div class="flower">
+  <img src="images/flower.gif">
+</div>
+          <!-- help/support icon  -->
+  <div class="contactus">
+    <a href="https://wa.me/8130586075" target="_blank"><img src="images/contactus.gif"></a>
+  </div>
+<script src="main.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
